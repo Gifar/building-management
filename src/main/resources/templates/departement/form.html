@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout}">
+<head>
+    <meta charset="UTF-8">
+    <title>Tambah Departement</title>
+</head>
+<body>
+<section layout:fragment="content" class="tables">
+    <div class="content-wrapper">
+        <div class="page-title">
+            <div>
+                <h1><i class="fa fa-th-list"></i> Tambah Departement</h1>
+            </div>
+            <div>
+                <ul class="breadcrumb side">
+                    <li><i class="fa fa-home fa-lg"></i></li>
+                    <li>Departement</li>
+                    <li class="active"><a href="#">Tambah Departement</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="form-group">
+            <label>Departement Code</label>
+            <input type="text" name="kodeLembaga" class="form-control" placeholder="Institution Name">
+        </div>
+
+        <div class="form-group">
+            <label>Departement Name</label>
+            <input type="text" name="namaLembaga" class="form-control" placeholder="Institution Name">
+        </div>
+
+        <div class="form-group">
+            <label>Status</label><br>
+            <div class="toggle">
+                <label>
+                    <input name="status" type="checkbox" value="AKTIF"><span class="button-indecator"></span>
+                </label>
+            </div>
+        </div>
+
+        <input type="hidden" name="id" >
+        <input class="btn btn-primary" type="submit" value="Save">
+        <a th:href="@{/departement/list}" class="btn btn-primary" role="button">
+            <span aria-hidden="true"></span>Cancel
+        </a>
+    </div>
+</section>
+</body>
+</html>
+<script type="text/javascript">$('#sampleTable').DataTable();</script>
