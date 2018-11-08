@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout}">
+<head>
+    <meta charset="UTF-8">
+    <title>Departement</title>
+</head>
+<body>
+<section layout:fragment="content" class="tables">
+    <div class="content-wrapper">
+        <div class="page-title">
+            <div>
+                <h1><i class="fa fa-th-list"></i> Departement</h1>
+            </div>
+            <div>
+                <ul class="breadcrumb side">
+                    <li><i class="fa fa-home fa-lg"></i></li>
+                    <li class="active"><a href="#">Departement</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <!--<div class="col-md-6">-->
+                            <!--<div class="form-group">-->
+                            <!--<label>Select Campus</label>-->
+                            <!--<select name="provinsi" class="form-control js-example-placeholder-single">-->
+                            <!--<option></option>-->
+                            <!--<option>STEI TAZKIA SENTUL</option>-->
+                            <!--<option>STEI TAZKIA MATRIKULASI</option>-->
+                            <!--</select>-->
+                            <!--</div>-->
+                            <!--</div>-->
+                            <div class="col-md-12">
+                                <a th:href="@{/departement/form}" class="btn btn-primary" role="button" aria-pressed="true"><i class="fa fa-plus"></i> Add</a>
+                            </div>
+                        </div>
+                        <br>
+                        <td class="col-md-5 col-sm-5 col-xs-8 form-group pull-right top_search">
+                            <form method="get">
+                                <div class="input-group">
+                                    <input type="text" id="keyresult" autocomplete="off"
+                                           class="form-control" placeholder="Search for...">
+                                    <span class="input-group-btn">
+                                                          <button class="btn btn-default" type="submit">Go!</button>
+                                                        </span>
+                                </div>
+                            </form>
+                        </td>
+
+
+
+                        </tr>
+
+                        </table>
+
+                        <div class="table-responsive">
+                            <table class="table table-striped jambo_table bulk_action">
+                                <thead>
+                                <tr class="headings">
+                                    <th>
+                                        <input type="checkbox" id="check-all" class="flat">
+                                    </th>
+                                    <th class="column-title">#</th>
+                                    <th class="column-title">Departement Code</th>
+                                    <th class="column-title">Departement Name</th>
+                                    <th class="column-title" colspan="2">Action</th>
+                                </tr>
+                                </thead>
+
+                                <tbody>
+                                <tr class="even pointer">
+                                    <td class="a-center ">
+                                        <input type="checkbox" class="flat" name="table_records">
+                                    </td>
+                                    <td>1</td>
+                                    <td>121000040</td>
+                                    <td>121000040</td>
+                                    <td>
+                                        <a href="form">
+                                            <button type="button" class="btn btn-primary btn-xs">Edit</button>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <button type="submit" class="btn btn-danger btn-xs"
+                                                onclick="return confirm('Are you sure? Once deleted, you will not be able' +
+                                                                 ' to recover this imaginary file!')">
+                                            <i class="ti-eraser"></i> Delete
+                                        </button>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>
+<script type="text/javascript">$('#sampleTable').DataTable();</script>

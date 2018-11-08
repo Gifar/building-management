@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout}">
+<head>
+    <meta charset="UTF-8">
+    <title>Detail Ruangan</title>
+</head>
+<body>
+<section layout:fragment="content" class="tables">
+    <div class="content-wrapper">
+        <div class="page-title">
+            <div>
+                <h1><i class="fa fa-th-list"></i>Detail Ruangan</h1>
+                <p>Table to display analytical data effectively</p>
+            </div>
+            <div>
+                <ul class="breadcrumb side">
+                    <li><i class="fa fa-home fa-lg"></i></li>
+                    <li>Ruangan</li>
+                    <li class="active"><a href="#">Detail Ruangan</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <table class="table table-striped table-hover table-bordered" id="sampleTable">
+                            <thead>
+                            <tr>
+                                <th>Nama</th>
+                                <th>Asal Sekolah</th>
+                                <th>Status Pendaftaran</th>
+                                <th>Fee Marketing</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>Tiger Nixon</td>
+                                <td>SMA SEIJOH</td>
+                                <td>Belum</td>
+                                <td>Belum</td>
+                            </tr>
+                            <tr>
+                                <td>Garrett Winters</td>
+                                <td>Accountant</td>
+                                <td>Belum</td>
+                                <td>Belum</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <a th:href="@{/ruangan/list}" class="btn btn-primary" role="button" aria-pressed="true"> Back</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>
+<script type="text/javascript">$('#sampleTable').DataTable();</script>
