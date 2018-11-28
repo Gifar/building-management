@@ -20,45 +20,100 @@
                 </ul>
             </div>
         </div>
-        <!--<div class="row">-->
-            <!--<div class="col-md-12">-->
-                <!--<div class="card">-->
-                    <!--<div class="card-body">-->
-                        <!--<table class="table table-hover table-bordered" id="sampleTable">-->
-                            <!--<thead>-->
-                            <!--<tr>-->
-                                <!--<th>Name</th>-->
-                                <!--<th>Asal Sekolah</th>-->
-                                <!--<th>Fee pendaftaran</th>-->
-                                <!--<th>Fee Daftar Ulang</th>-->
-                            <!--</tr>-->
-                            <!--</thead>-->
-                            <!--<tbody>-->
-                            <!--<tr>-->
-                                <!--<td>Tiger Nixon</td>-->
-                                <!--<td>System Architect</td>-->
-                                <!--<td>Edinburgh</td>-->
-                                <!--<td>61</td>-->
-                            <!--</tr>-->
-                            <!--<tr>-->
-                                <!--<td>Garrett Winters</td>-->
-                                <!--<td>Accountant</td>-->
-                                <!--<td>Tokyo</td>-->
-                                <!--<td>63</td>-->
-                            <!--</tr>-->
-                            <!--<tr>-->
-                                <!--<td>Ashton Cox</td>-->
-                                <!--<td>Junior Technical Author</td>-->
-                                <!--<td>San Francisco</td>-->
-                                <!--<td>66</td>-->
-                            <!--</tr>-->
-                            <!--</tbody>-->
-                        <!--</table>-->
-                    <!--</div>-->
-                <!--</div>-->
-            <!--</div>-->
-        <!--</div>-->
-    <!--</div>-->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <table width="100%">
+                            <tr>
+                                <td>
+                                    <a th:href="@{/pic/form}" class="btn btn-primary" role="button"><i class="fa fa-plus-square"></i> Add</a>
+                                </td>
+                                <td align="right">
+                                    <form method="get">
+                                        <div class="title_right">
+                                            <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
+                                                <div class="input-group">
+                                                    <input type="text"  class="form-control" placeholder="Search for..." name="search">
+                                                    <span class="input-group-btn">
+                                                    <button class="btn btn-default" type="submit">Search</button>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </td>
+                            </tr>
+                        </table>
+                        </form>
+                    </div>
+
+
+                    <div class="table-responsive">
+                        <table class="table table-striped jambo_table bulk-action">
+                            <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Nama Pegawai</th>
+                                <th>Tanggal Lahir</th>
+                                <th>Tempat Lahir</th>
+                                <th>Agama</th>
+                                <th>Jenis Kelamin</th>
+                                <th>Alamat</th>
+                                <th>Nomor Hp</th>
+                                <th width="30px"></th>
+                                <th width="40px"></th>
+                            </tr>
+                            </thead>
+
+                            <tbody>
+                            <tr >
+                                <td>1</td>
+                                <td>PATRICK STAR</td>
+                                <td>17</td>
+                                <td>Bandung</td>
+                                <td>Islam</td>
+                                <td>Cowo</td>
+                                <td>alamat</td>
+                                <td>021456468464</td>
+                                <td>
+                                    <a href="form">
+                                        <button type="button" class="btn btn-primary btn-xs">Edit</button>
+                                    </a>
+                                </td>
+                                <td>
+                                    <button type="submit" class="btn btn-danger btn-xs"
+                                            onclick="return confirm('Are you sure? Once deleted, you will not be able' +
+                                                                 ' to recover this imaginary file!')">
+                                        <i class="ti-eraser"></i> Delete
+                                    </button>
+                                </td>
+                            </tr>
+                            </tbody>
+
+                        </table>
+                        <div align="right">
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination">
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Previous">
+                                            <span aria-hidden="true">&laquo;</span>
+                                            <span class="sr-only">Previous</span>
+                                        </a>
+                                    </li>
+                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Next">
+                                            <span aria-hidden="true">&raquo;</span>
+                                            <span class="sr-only">Next</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+
+                        </div>
 </section>
 </body>
 </html>

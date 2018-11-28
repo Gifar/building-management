@@ -20,39 +20,36 @@
                 </ul>
             </div>
         </div>
+
+
         <div class="row">
             <div class="col-md-12">
                 <div class="card">
                     <div class="card-body">
-                        <div class="row">
-                            <!--<div class="col-md-6">-->
-                            <!--<div class="form-group">-->
-                            <!--<label>Select Campus</label>-->
-                            <!--<select name="provinsi" class="form-control js-example-placeholder-single">-->
-                            <!--<option></option>-->
-                            <!--<option>STEI TAZKIA SENTUL</option>-->
-                            <!--<option>STEI TAZKIA MATRIKULASI</option>-->
-                            <!--</select>-->
-                            <!--</div>-->
-                            <!--</div>-->
-                            <div class="col-md-12">
-                                <a th:href="@{/gedung/form}" class="btn btn-primary" role="button" aria-pressed="true"><i class="fa fa-plus"></i> Add</a>
-                            </div>
-                        </div>
-                        <br>
-                        <td class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search title_right ">
-                            <form method="get">
-                                <div class="input-group">
-                                    <input type="text" id="keyresult" autocomplete="off"
-                                           placeholder="Search for..." class="form-control" name="search">
-                                    <span class="input-group-btn">
-                                                <button class="btn btn-default" type="submit">Go!</button>
-                                    </span>
-                                </div>
+                            <table width="100%">
+                                <tr>
+                                    <td>
+                                        <a th:href="@{/gedung/form}" class="btn btn-primary" role="button"><i class="fa fa-plus-square"></i> Add</a>
+                                    </td>
+                                    <td align="right">
+                                        <form method="get">
+                                            <div class="title_right">
+                                                <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
+                                                    <div class="input-group">
+                                                        <input type="text"  class="form-control" placeholder="Search for..." name="search">
+                                                        <span class="input-group-btn">
+                                                    <button class="btn btn-default" type="submit">Search</button>
+                                                    </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </td>
+                                </tr>
+                            </table>
                             </form>
-                        </td>
-                        </tr>
-                        </table>
+                        </div>
+
 
                         <div class="table-responsive">
                             <table class="table table-striped jambo_table bulk-action">
